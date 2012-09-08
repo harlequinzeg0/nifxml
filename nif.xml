@@ -217,46 +217,24 @@
         <option value="31" name="HAV_MAT_RUBBER">Rubber</option>
         <!-- Skyrim Specific Options -->
         <option value="365420259" name="SKY_HAV_MAT_LIGHT_WOOD">Light Wood</option>
-        <option value="131151687" name="SKY_HAV_MAT_BROKEN_STONE">Broken Stone</option>
-        <option value="398949039" name="SKY_HAV_MAT_SNOW">Snow</option>
-        <option value="428587608" name="SKY_HAV_MAT_GRAVEL">Gravel</option>
-        <option value="438912228" name="SKY_HAV_MAT_MATERIAL_CHAIN_METAL">MaterialChainMetal</option>
         <option value="500811281" name="SKY_HAV_MAT_WOOD">Wood</option>
-        <option value="732141076" name="SKY_HAV_MAT_BARREL">Barrel</option>
         <option value="790784366" name="SKY_HAV_MAT_MATERIAL_BASKET">Material Basket</option>
-        <option value="873356572" name="SKY_HAV_MAT_ICE">Ice</option>
-        <option value="899511101" name="SKY_HAV_MAT_STAIRSSTONE">Stairs Stone</option>
         <option value="1060167844" name="SKY_HAV_MAT_MATERIAL_BLADE_1HAND">Material Blade 1 Hand</option>
         <option value="1264672850" name="SKY_HAV_MAT_MATERIALBOOK">Material Book</option>
         <option value="1288358971" name="SKY_HAV_MAT_SOLID_METAL">Solid Metal</option>
         <option value="1305674443" name="SKY_HAV_MAT_MATERIAL_AXE_1HAND">Material Axe 1Hand</option>
         <option value="1461712277" name="SKY_HAV_MAT_STAIRS_WOOD">Stairs Wood</option>
-        <option value="1486385281" name="SKY_HAV_MAT_MUD">Mud</option>
-        <option value="1560365355" name="SKY_HAV_MAT_STAIRSSNOW">Stairs Snow</option>
-        <option value="1591009235" name="SKY_HAV_MAT_UNKNOWN">Unknown material in Creation Kit v1.5.24.0. Found in trap objects.</option>
         <option value="1607128641" name="SKY_HAV_MAT_MATERIAL_BOWS_STAVES">Material Bows Staves</option>
-        <option value="1848600814" name="SKY_HAV_MAT_GRASS">Grass</option>
-        <option value="1885326971" name="SKY_HAV_MAT_MATERIAL_BOULDER_LARGE">MaterialBoulderLarge</option>
-        <option value="1886078335" name="SKY_HAV_MAT_MATERIALSTONEASSTAIRS">Material Stone As Stairs</option>
         <option value="2022742644" name="SKY_HAV_MAT_MATERIAL_BLADE_2HAND">Material Blade 2Hand</option>
-        <option value="2025794648" name="SKY_HAV_MAT_MATERIAL_BOTTLE_SMALL">MaterialBottleSmall</option>
         <!-- NifSkope Has some issues reading UInt above 2.02Billion, Commented out all errored reads
-        <option value="2168343821" name="SKY_HAV_MAT_SAND">Sand</option>
         <option value="2229413539" name="SKY_HAV_MAT_HEAVY_METAL">Heavy Metal</option>
         <option value="2617944780" name="SKY_HAV_MAT_MATERIAL_BLADE_1HAND_SMALL">Material Blade 1Hand Small,</option>
-        <option value="2892392795" name="SKY_HAV_MAT_STAIRSBROKENSTONE">Stairs Broken Stone</option>
         <option value="2974920155" name="SKY_HAV_MAT_ORGANIC">Organic</option>
         <option value="3070783559" name="SKY_HAV_MAT_HEAVY_WOOD">Heavy Wood</option>
-        <option value="3074114406" name="SKY_HAV_MAT_MATERIAL_CHAIN">MaterialChain</option>
-        <option value="3106094762" name="SKY_HAV_MAT_DIRT">Dirt</option>
-        <option value="3589100606" name="SKY_HAV_MAT_MATERIALCOIN">Material Coin</option>
         <option value="3725505938" name="SKY_HAV_MAT_MATERIALARROW">MaterialArrow</option>
-        <option value="3739830338" name="SKY_HAV_MAT_GLASS">GLASS</option>
         <option value="3741512247" name="SKY_HAV_MAT_STONE">Stone</option>
         <option value="3839073443" name="SKY_HAV_MAT_CLOTH">Cloth</option>
-        <option value="3969592277" name="SKY_HAV_MAT_MATERIAL_BLUNT_2HAND">Material Blunt 2Hand</option>
-        <option value="4283869410" name="SKY_HAV_MAT_MATERIAL_BOULDER_MEDIUM">MaterialBoulderMedium</option>
--->
+        <option value="3969592277" name="SKY_HAV_MAT_MATERIAL_BLUNT_2HAND">Material Blunt 2Hand</option> -->
     </enum>
 
     <enum name="OblivionLayer" storage="byte">
@@ -718,14 +696,14 @@
         <option value="7" name="Parallax Occ Material">Enables Height(TS4), Max Passes, Scale.  Unused?</option>
         <option value="8" name="World Multitexture"></option>
         <option value="9" name="WorldMap1"></option>
-        <option value="10" name="Unknown 10"></option>
+        <option value="10" name="Unknown/Unused"></option>
         <option value="11" name="MultiLayer Parallax">Enables EnvMap Mask(TS6), Layer(TS7), Parallax Layer Thickness, Parallax Refraction Scale, Parallax Inner Layer U Scale, Parallax Inner Layer V Scale, EnvMap Scale</option>
-        <option value="12" name="Unknown 12"></option>
+        <option value="12" name="Unknown/Unused"></option>
         <option value="13" name="WorldMap2"></option>
-        <option value="14" name="Sparkle Snow">Enables SparkleParams</option>
+        <option value="14" name="Sparkle/Snow">Enables SparkleParams</option>
         <option value="15" name="WorldMap3"></option>
         <option value="16" name="Eye Envmap">Enables EnvMap Mask(TS6), Eye EnvMap Scale</option>
-        <option value="17" name="Unknown 17"></option>
+        <option value="17" name="Unknown/Unused"></option>
         <option value="18" name="WorldMap4"></option>
         <option value="19" name="World LOD Multitexture"></option>
     </enum>
@@ -954,7 +932,8 @@
 
     <compound name="ControllerLink" ver1="10.2.0.0">
         In a .kf file, this links to a controllable object, via its name (or for version 10.2.0.0 and up, a link and offset to a NiStringPalette that contains the name), and a sequence of interpolators that apply to this controllable object, via links.
-        <add name="Target Name" type="string" ver2="10.1.0.0">Name of a controllable object in another NIF file.</add>
+        <!--<add name="Target Name" type="string" ver2="10.1.0.0">Name of a controllable object in another NIF file.</add>-->
+        <add name="Node Name" type="string" ver2="10.1.0.0">Name of a controllable object in another NIF file.</add>
         <add name="Controller" type="Ref" template="NiTimeController" ver2="10.1.0.0">Link to a controller.</add>
         <add name="Interpolator" type="Ref" template="NiInterpolator" ver1="10.1.0.106">Link to an interpolator.</add>
         <add name="Controller" type="Ref" template="NiTimeController" ver1="10.1.0.106">Unknown link. Usually -1.</add>
@@ -1217,22 +1196,6 @@
         <add name="Radius" type="Vector3">Radius, per direction.</add>
     </compound>
 
-	<bitflags name="FurnitureEntryPoints" storage="ushort">
-		Furniture entry points. It specifies the direction(s) from where the actor is able to enter (and leave) the position.
-		<option value="0" name="Front">front entry point</option>
-		<option value="1" name="Behind">behind entry point</option>
-		<option value="2" name="Right">right entry point</option>
-		<option value="3" name="Left">left entry point</option>
-		<option value="4" name="Up">up entry point - unknown function. Used on some beds in Skyrim, probably for blocking of sleeping position.</option>
-	</bitflags>
-
-	<enum name="AnimationType" storage="ushort">
-		Animation type used on this position. This specifies the function of this position.
-		<option value="1" name="Sit">Actor use sit animation.</option>
-		<option value="2" name="Sleep">Actor use sleep animation.</option>
-		<option value="4" name="Lean">Used for lean animations?</option>
-	</enum>
-
     <compound name="FurniturePosition">
         Describes a furniture position?
         <add name="Offset" type="Vector3">Offset of furniture marker.</add>
@@ -1240,8 +1203,8 @@
         <add name="Position Ref 1" type="byte" vercond="User Version &lt;= 11">Refers to a furnituremarkerxx.nif file. Always seems to be the same as Position Ref 2.</add>
         <add name="Position Ref 2" type="byte" vercond="User Version &lt;= 11">Refers to a furnituremarkerxx.nif file. Always seems to be the same as Position Ref 1.</add>
         <add name="Heading" type="float" vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 12))">Similar to Orientation, in float form.</add>
-        <add name="Animation Type" type="AnimationType" vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 12))">Unknown</add>
-        <add name="Entry Properties" type="FurnitureEntryPoints" vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 12))">Unknown/unused in nif?</add>
+        <add name="Animation Type" type="ushort" vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 12))">Unknown</add>
+        <add name="Entry Properties" type="ushort" vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 12))">Unknown/unused in nif?</add>
     </compound>
 
     <compound name="hkTriangle">
@@ -1556,10 +1519,10 @@
         <add name="Triangle 1" type="ushort"></add>
         <add name="Triangle 2" type="ushort"></add>
         <add name="Triangle 3" type="ushort"></add>
-		<add name="Unknown Int 1" type="uint">Always 0?</add>
+        <add name="Unknown Int 1" type="uint">Always 0?</add>
         <add name="Unknown Short 1" type="ushort"></add>
     </compound>
-    
+
     <compound name="bhkCMSDTransform">
     A set of transformation data: translation and rotation
         <add name="Translation" type="Vector4">A vector that moves the chunk by the specified amount. W is not used.</add>
@@ -1568,10 +1531,10 @@
     
     <compound name="bhkCMSDChunk">
     Defines subshape chunks in bhkCompressedMeshShapeData
-		<add name="Translation" type="Vector4">Local translation</add>
-		<add name="Material Index" type="uint">Index of material in bhkCompressedMeshShapeData::Chunk Materials</add>
-		<add name="Unknown Short 1" type="ushort">Always 65535?</add>
-		<add name="Transform Index" type="ushort">Index of transformation in bhkCompressedMeshShapeData::Chunk Transforms</add>
+        <add name="Translation" type="Vector4">Chunk individual translation</add>
+        <add name="Chunk Material index" type="uint">Selects the material for chunk. It is numeric index of array item in Chunk Materials.</add>
+        <add name="Unknown Short 1" type="ushort">Always 0xFFFF?</add>
+        <add name="Chunk Transform index" type="ushort">Selects the transform for chunk. It is numeric index to Chunk Transforms.</add>
         <add name="Num Vertices" type="uint">Number of compressed vertices</add>
         <add name="Vertices" type="ushort" arr1="Num Vertices">Compressed vertices</add>
         <add name="Num Indices" type="uint"></add>
@@ -1727,13 +1690,13 @@
         <add name="Rotation" type="QuaternionXYZW">The rotation Yaw/Pitch/Roll to apply to the body. Only enabled in bhkRigidBodyT objects.</add>
         <add name="Linear Velocity" type="Vector4">Linear velocity.</add>
         <add name="Angular Velocity" type="Vector4">Angular velocity.</add>
-        <add name="Inertia" type="InertiaMatrix">Defines how the mass is distributed among the body.</add>
+        <add name="Inertia Tensors" type="InertiaMatrix">Defines how the mass is distributed among the body.</add>
         <add name="Center" type="Vector4"> This seems to be used to relocate the object's center of mass. Useful for balancing objects in contraints.</add>
         <add name="Mass" type="float" default="1.0">The body's mass in kg. A mass of zero represents an immovable object.</add>
         <add name="Linear Damping" type="float" default="0.1"> Damping value for linear movement. A value that is too small fixes the object in place.</add>
         <add name="Angular Damping" type="float" default="0.05"> Damping value for angular movement.</add>
-        <add name="Unknown TimeFactor or GravityFactor 1" type="float" vercond="(User Version >= 12)" />
-        <add name="Unknown TimeFactor or GravityFactor 2" type="float" vercond="(User Version >= 12)" />
+        <add name="TimeFactor or GravityFactor?" type="float" vercond="(User Version >= 12)" />
+        <add name="TimeFactor or GravityFactor?" type="float" vercond="(User Version >= 12)" />
         <add name="Friction" type="float" default="0.3">The body&#039;s friction.</add>
         <add name="RollingFrictionMultiplier?" type="float" vercond="(User Version >= 12)" />
         <add name="Restitution" type="float" default="0.3">
@@ -1750,7 +1713,7 @@
         </add>
         <add name="Motion System" type="MotionSystem" default="MO_SYS_DYNAMIC">Motion system? Overrides Quality when on Keyframed?</add>
         <add name="Deactivator Type" type="DeactivatorType" default="DEACTIVATOR_NEVER">The initial deactivator type of the body.</add>
-        <add name="Solver Deactivation" type="SolverDeactivation" default="SOLVER_DEACTIVATION_OFF">Usually set to 1 for fixed objects, or set to 2 for moving ones.  Seems to always be same as Unknown Byte 1.</add>
+        <add name="Solver Deactivation" type="SolverDeactivation" default="SOLVER_DEACTIVATION_OFF">Usually set to 1 for fixed objects, or set to 2 for moving ones. Seems to always be same as Unknown Byte 1.</add>
         <add name="Quality Type" type="MotionQuality" default="MO_QUAL_FIXED">The motion type. Determines quality of motion?</add>
         <add name="Unknown Int 6" type="uint" default="512">Unknown.</add>
         <add name="Unknown Int 7" type="uint" default="160">Unknown.</add>
@@ -1854,9 +1817,9 @@
         <add name="Unknown Int 1" type="uint">Unknown</add>
         <add name="Unknown Int 2" type="uint">Unknown</add>
         <add name="Num Links" type="uint">Number of links in the chain</add>
-        <add name="Links" type="Ptr" template="NiObject" arr1="Num Links">Unknown</add>
+        <add name="Links" type="Ptr" template="NiObject" arr1="Num Links" cond="Num Links >= 1">Unknown</add>
         <add name="Num Links 2" type="uint">Number of links in the chain</add>
-        <add name="Links 2" type="Ptr" template="NiObject" arr1="Num Links 2">Unknown</add>
+        <add name="Links 2" type="Ptr" template="NiObject" arr1="Num Links 2" cond="Num Links 2 >= 1">Unknown</add>
         <add name="Unknown Int 3" type="uint">Unknown</add>
     </niobject>
 
@@ -2089,7 +2052,6 @@
 
     <niobject name="NiObjectNET" abstract="1" inherit="NiObject">
         An object that can be controlled by a controller.
-        <add name="Skyrim Shader Type" type="BSLightingShaderPropertyShaderType" vercond="User Version >= 12" cond="BSLightingShaderProperty">Configures the main shader path</add>
         <add name="Name" type="string">Name of this controllable object, used to refer to the object in .kf files.</add>
         <add name="Has Old Extra Data" type="bool" ver2="2.3">Extra data for pre-3.0 versions.</add>
         <add name="Old Extra Prop Name" cond="Has Old Extra Data" ver2="2.3" type="string">(=NiStringExtraData)</add>
@@ -2229,7 +2191,8 @@
         <add name="Phase" type="float">Phase (usually 0.0).</add>
         <add name="Start Time" type="float">Controller start time.</add>
         <add name="Stop Time" type="float">Controller stop time.</add>
-        <add name="Target" type="Ptr" template="NiObjectNET" ver1="3.3.0.13">Controller target (object index of the first controllable ancestor of this object).</add>
+        <add name="Target" type="Ptr" template="NiObjectNET" ver1="3.3.0.13" vercond="(Version &lt; 20.2.0.7)">Controller target (object index of the first controllable ancestor of this object).</add>
+        <add name="Target" type="Ptr" template="NiObject" ver1="3.3.0.13" vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version &lt;= 12))">Controller target (object index of the first controllable ancestor of this object).</add>
         <add name="Unknown Integer" type="uint" ver2="3.1">Unknown integer.</add>
     </niobject>
 
@@ -2435,10 +2398,10 @@
         <add name="Has Shader" type="bool" ver1="10.0.1.0" ver2="20.1.0.3">Shader.</add>
         <add name="Shader Name" type="string" cond="Has Shader" ver1="10.0.1.0" ver2="20.1.0.3">The shader name.</add>
         <add name="Unknown Integer" type="int" cond="Has Shader" ver1="10.0.1.0" ver2="20.1.0.3">Unknown value, usually -1. (Not a link)</add>
-        <add name="Unknown Byte" type="byte" default="255" userver="1">Cyanide extension (only in version 10.2.0.0?).</add>
+        <add name="Unknown Byte" type="byte" default="255" userver="1" vercond="(Version == 10.2.0.0) || ((Version != 20.0.0.5) &amp;&amp; (User Version 2 == 1))">Cyanide extension (only in version 10.2.0.0?).</add>
         <add name="Unknown Integer 2" type="int" ver1="10.4.0.1" ver2="10.4.0.1">Unknown.</add>
         <add name="Dirty Flag" type="bool" ver1="20.2.0.7">Dirty Flag?</add>
-        <add name="BS Properties" type="Ref" template="NiProperty" arr1="2" ver1="20.2.0.7" userver="12">Two property links, used by Bethesda.</add>
+        <add name="Properties" type="Ref" template="NiObject" arr1="2" ver1="20.2.0.7" userver="12">Two property links, used in Skyrim nifs.</add>
     </niobject>
 
     <niobject name="NiTriBasedGeom" abstract="1" inherit="NiGeometry">
@@ -2448,21 +2411,18 @@
     <niobject name="NiGeometryData" abstract="1" inherit="NiObject">
         Mesh data: vertices, vertex normals, etc.
         <add name="Unknown Int" type="int" ver1="10.2.0.0">Unknown identifier. Always 0.</add>
-        <!-- special case for Bethesda PSysData (or NiParticlesData?) in Fallout 3 and higher -->
-        <add name="Num Vertices" type="ushort" cond="!NiPSysData">Number of vertices.</add>
-        <add name="Num Vertices" type="ushort" cond="NiPSysData" vercond="(Version &lt; 20.2.0.7) || (User Version &lt; 11)">Number of vertices.</add>
-        <add name="BS Max Vertices" type="ushort" cond="NiPSysData" vercond="(Version >= 20.2.0.7) &amp;&amp; (User Version >= 11)">Bethesda uses this for max number of particles in NiPSysData.</add>
+        <add name="Num Vertices" type="ushort" >Number of vertices. For NiPSysData this is max particles.</add>
         <add name="Keep Flags" type="byte" ver1="10.1.0.0">Used with NiCollision objects when OBB or TRI is set.</add>
         <add name="Compress Flags" type="byte" ver1="10.1.0.0">Unknown.</add>
         <add name="Has Vertices" type="bool" default="1">Is the vertex array present? (Always non-zero.)</add>
         <add name="Vertices" type="Vector3" arr1="Num Vertices" cond="Has Vertices">The mesh vertices.</add>
         <add name="Num UV Sets" type="ushort" vercond="((Version >= 10.0.1.0) &amp;&amp; (!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))))">Methods for saving binormals and tangents saved in upper byte.  Texture flags in lower byte.</add>
-        <add name="BS Num UV Sets" type="ushort" vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">Bethesda's version of this field for nif versions 20.2.0.7 and up. Only a single bit denotes whether uv's are present. For example, see meshes/architecture/megaton/megatonrampturn45sml.nif in Fallout 3.</add>
-        <add name="Unknown Int 2" type="uint" ver1="20.2.0.7" userver="12" cond="!NiPSysData">Unknown, seen in Skyrim.</add>	
+        <add name="Num UV Sets" type="ushort" vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">Bethesda's version of this field for nif versions 20.2.0.7 and up. Only a single bit denotes whether uv's are present. For example, see meshes/architecture/megaton/megatonrampturn45sml.nif in Fallout 3.</add>
+        <add name="Unknown Int 2" type="uint" ver1="20.2.0.7" userver="12">Unknown, seen in Skyrim.</add>	
         <add name="Has Normals" type="bool">Do we have lighting normals? These are essential for proper lighting: if not present, the model will only be influenced by ambient light.</add>
         <add name="Normals" type="Vector3" arr1="Num Vertices" cond="Has Normals">The lighting normals.</add>
-        <add name="Tangents" type="Vector3" arr1="Num Vertices" cond="(Has Normals) &amp;&amp; ((Num UV Sets &amp; 61440) || (BS Num UV Sets &amp; 61440))" ver1="10.1.0.0">Unknown. Binormal &amp; tangents?</add>
-        <add name="Binormals" type="Vector3" arr1="Num Vertices" cond="(Has Normals) &amp;&amp; ((Num UV Sets &amp; 61440) || (BS Num UV Sets &amp; 61440))" ver1="10.1.0.0">Unknown. Binormal &amp; tangents? has_normals must be set as well for this field to be present.</add>
+        <add name="Tangents" type="Vector3" arr1="Num Vertices" cond="(Has Normals) &amp;&amp; (Num UV Sets &amp; 61440)" ver1="10.1.0.0">Unknown. Binormal &amp; tangents?</add>
+        <add name="Binormals" type="Vector3" arr1="Num Vertices" cond="(Has Normals) &amp;&amp; (Num UV Sets &amp; 61440)" ver1="10.1.0.0">Unknown. Binormal &amp; tangents? has_normals must be set as well for this field to be present.</add>
         <add name="Center" type="Vector3">Center of the bounding box (smallest box that contains all vertices) of the mesh.</add>
         <add name="Radius" type="float">Radius of the mesh: maximal Euclidean distance between the center and all vertices.</add>
         <add name="Unknown 13 shorts" type="short" arr1="13" ver1="20.3.0.9" ver2="20.3.0.9" userver="131072">Unknown, always 0?</add>
@@ -2481,11 +2441,9 @@
             Note: for compatibility with NifTexture, set this value to either 0x00000000 or 0xFFFFFFFF.
         </add>
         <add name="UV Sets" type="TexCoord" arr1="Num UV Sets &amp; 63" arr2="Num Vertices" vercond="!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">The UV texture coordinates. They follow the OpenGL standard: some programs may require you to flip the second coordinate.</add>
-        <add name="UV Sets" type="TexCoord" arr1="BS Num UV Sets &amp; 1" arr2="Num Vertices"  vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">The UV texture coordinates. They follow the OpenGL standard: some programs may require you to flip the second coordinate.</add>
-        <add name="Consistency Flags" type="ConsistencyType" ver1="10.0.1.0" default="CT_MUTABLE" vercond="User Version &lt; 12">Consistency Flags</add>
-        <add name="Consistency Flags" type="ConsistencyType" ver1="10.0.1.0" default="CT_MUTABLE" vercond="User Version >= 12" cond="!NiPSysData">Consistency Flags</add>
-        <add name="Additional Data" type="Ref" template="AbstractAdditionalGeometryData" ver1="20.0.0.4" vercond="User Version &lt; 12">Unknown.</add>
-        <add name="Additional Data" type="Ref" template="AbstractAdditionalGeometryData" ver1="20.0.0.4" vercond="User Version >= 12" cond="!NiPSysData">Unknown.</add>
+        <add name="UV Sets" type="TexCoord" arr1="Num UV Sets &amp; 1" arr2="Num Vertices"  vercond="((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">The UV texture coordinates. They follow the OpenGL standard: some programs may require you to flip the second coordinate.</add>
+        <add name="Consistency Flags" type="ConsistencyType" ver1="10.0.1.0" default="CT_MUTABLE">Consistency Flags</add>
+        <add name="Additional Data" type="Ref" template="AbstractAdditionalGeometryData" ver1="20.0.0.4">Unknown.</add>
     </niobject>
 
     <niobject name="AbstractAdditionalGeometryData" abstract="1" inherit="NiObject">
@@ -2580,8 +2538,41 @@
         Ambient light source.
     </niobject>
 
-    <niobject name="NiParticlesData" abstract="0" inherit="NiGeometryData">
+    <niobject name="NiParticlesData" abstract="0" inherit="NiObject">
         Generic rotating particles data object.
+        <add name="Name" type="string" ver1="10.2.0.0">Name of this object.</add>
+        <add name="Num Vertices" type="ushort">Number of vertices. For NiPSysData this is max particles. (For Fallout 3 this is always zero)</add>
+        <add name="Keep Flags" type="byte" ver1="10.1.0.0">Used with NiCollision objects when OBB or TRI is set.</add>
+        <add name="Compress Flags" type="byte" ver1="10.1.0.0">Unknown.</add>
+        <add name="Has Vertices" type="bool" default="1">Is the vertex array present? (Always non-zero.)</add>
+        <add name="Vertices" type="Vector3" arr1="Num Vertices" cond="Has Vertices" vercond="!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">The mesh vertices.</add>
+        <add name="Num UV Sets" type="byte" ver1="10.0.1.0">Texture flags in lower byte.</add>
+        <add name="TSpace Flag" type="byte" ver1="10.0.1.0">Methods for saving binormals and tangents saved in upper byte.</add>
+        <add name="Has Normals" type="bool">Do we have lighting normals? These are essential for proper lighting: if not present, the model will only be influenced by ambient light.</add>
+        <add name="Normals" type="Vector3" arr1="Num Vertices" cond="Has Normals" vercond="!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">The lighting normals.</add>
+        <add name="Tangents" type="Vector3" arr1="Num Vertices" cond="(Has Normals) &amp;&amp; (TSpace Flag &amp; 240)" ver1="10.1.0.0" vercond="!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">Unknown. Binormal &amp; tangents?</add>
+        <add name="Binormals" type="Vector3" arr1="Num Vertices" cond="(Has Normals) &amp;&amp; (TSpace Flag &amp; 240)" ver1="10.1.0.0" vercond="!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">Unknown. Binormal &amp; tangents? has_normals must be set as well for this field to be present.</add>
+        <add name="Center" type="Vector3">Center of the bounding box (smallest box that contains all vertices) of the mesh.</add>
+        <add name="Radius" type="float">Radius of the mesh: maximal Euclidean distance between the center and all vertices.</add>
+        <add name="Has Vertex Colors" type="bool">
+            Do we have vertex colors? These are usually used to fine-tune the lighting of the model.
+
+            Note: how vertex colors influence the model can be controlled by having a NiVertexColorProperty object as a property child of the root node. If this property object is not present, the vertex colors fine-tune lighting.
+
+            Note 2: set to either 0 or 0xFFFFFFFF for NifTexture compatibility.
+        </add>
+        <add name="Vertex Colors" type="Color4" arr1="Num Vertices" cond="Has Vertex Colors" vercond="!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">The vertex colors.</add>
+        <add name="Num UV Sets" type="byte" ver2="4.2.2.0">Texture flags in lower byte.</add>
+        <add name="TSpace Flag" type="byte" ver2="4.2.2.0">Methods for saving binormals and tangents saved in upper byte.</add>
+        <add name="Has UV" type="bool" ver2="4.0.0.2">
+            Do we have UV coordinates?
+
+            Note: for compatibility with NifTexture, set this value to either 0x00000000 or 0xFFFFFFFF.
+        </add>
+        <add name="UV Sets" type="TexCoord" arr1="Num UV Sets &amp; 63" arr2="Num Vertices" vercond="!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">The UV texture coordinates. They follow the OpenGL standard: some programs may require you to flip the second coordinate.</add>
+        <!--<add name="UV Sets" type="TexCoord" arr1="Num UV Sets &amp; 1" arr2="Num Vertices">The UV texture coordinates. They follow the OpenGL standard: some programs may require you to flip the second coordinate.</add>-->
+        <add name="Consistency Flags" type="ConsistencyType" ver1="10.0.1.0" default="CT_MUTABLE" vercond="User Version &lt;= 11">Consistency Flags</add>
+        <add name="Additional Data" type="Ref" template="NiAdditionalGeometryData" ver1="20.0.0.4" vercond="User Version &lt;= 11">Unknown.</add>
         <add name="Num Particles" type="ushort" ver2="4.0.0.2">The maximum number of particles (matches the number of vertices).</add>
         <add name="Particle Radius" type="float" ver2="10.0.1.0">The particles&#039; size.</add>
         <add name="Has Radii" type="bool" ver1="10.1.0.0">Is the particle size array present?</add>
@@ -2599,7 +2590,7 @@
         <add name="Rotation Axes" type="Vector3" arr1="Num Vertices" cond="Has Rotation Axes" ver1="20.0.0.4" vercond="!((Version >= 20.2.0.7) &amp;&amp; (User Version >= 11))">Unknown</add>
         <add name="Has UV Quadrants" type="bool" vercond="(Version >= 20.2.0.7) &amp;&amp; (User Version == 11)">if value is no, a single image rendered</add>
         <add name="Num UV Quadrants" type="byte" vercond="(Version >= 20.2.0.7) &amp;&amp; (User Version == 11)">2,4,8,16,32,64 are potential values. If "Has" was no then this should be 256, which represents a 16x16 framed image, which is invalid</add>
-        <add name="UV Quadrants" type="Vector4" arr1="Num UV Quadrants" cond="Has UV Quadrants" vercond="(Version >= 20.2.0.7) &amp;&amp; (User Version == 11)"></add>
+        <add name="UV Quadrants" type="Vector4" arr1="Num UV Quadrants" cond="Has UV Quadrants >= 1" vercond="(Version >= 20.2.0.7) &amp;&amp; (User Version == 11)"></add>
         <add name="Unknown Byte 2" type="byte" vercond="(Version == 20.2.0.7) &amp;&amp; (User Version >= 11)">Unknown</add>
     </niobject>
 
@@ -2806,7 +2797,8 @@
     <niobject name="NiSequence" abstract="0" inherit="NiObject">
         Root node used in some Empire Earth II .kf files (version 4.2.2.0).
         <add name="Name" type="string">Name of this object. This is also the name of the action associated with this file. For instance, if the original NIF file is called &quot;demon.nif&quot; and this animation file contains an attack sequence, then the file would be called &quot;demon_attack1.kf&quot; and this field would contain the string &quot;attack1&quot;.</add>
-        <add name="Text Keys Name" type="string" ver2="10.1.0.0">Name of following referenced NiTextKeyExtraData class.</add>
+        <!--<add name="Text Keys Name" type="string" ver2="10.1.0.0">Name of following referenced NiTextKeyExtraData class.</add>-->
+        <add name="Target Name" type="string" ver2="10.1.0.0">Name of following referenced NiTextKeyExtraData class.</add>
         <add name="Text Keys" type="Ref" template="NiTextKeyExtraData" ver2="10.1.0.0">Link to NiTextKeyExtraData.</add>
         <add name="Unknown Int 4" type="int" ver1="20.3.0.9" ver2="20.3.0.9" userver="131072">Unknown</add>
         <add name="Unknown Int 5" type="int" ver1="20.3.0.9" ver2="20.3.0.9" userver="131072">Unknown</add>
@@ -3121,8 +3113,8 @@
 
     <niobject name="NiParticleSystem" abstract="0" inherit="NiParticles">
         A particle system.
+		<add name="Unknown Short 1" type="ushort" vercond="User Version >= 12">Unknown</add>
 		<add name="Unknown Short 2" type="ushort" vercond="User Version >= 12">Unknown</add>
-		<add name="Unknown Short 3" type="ushort" vercond="User Version >= 12">Unknown</add>
 		<add name="Unknown Int 1" type="uint" vercond="User Version >= 12">Unknown</add>
 		<add name="World Space" type="bool" ver1="10.1.0.0">If true, Particles are birthed into world space.  If false, Particles are birthed into object space.</add>
         <add name="Num Modifiers" type="uint" ver1="10.1.0.0">The number of modifier references.</add>
@@ -4353,9 +4345,9 @@
         <option value="8" name="SF_Alpha_Texture">Alpha Texture Requires NiAlphaProperty to Enable</option>
         <option value="9" name="SF_Unknown_2">Unknown</option>
         <option value="10" name="SF_FaceGen">FaceGen</option>
-        <option value="11" name="SF_Parallax_Shader_Index_15">Parallax</option>
+        <option value="11" name="SF_Parallax/Shader_Index=15">Parallax</option>
         <option value="12" name="SF_Unknown_3">Unknown/Crash</option>
-        <option value="13" name="SF_Non_Projective_Shadows">Non-Projective Shadows</option>
+        <option value="13" name="SF_Non-Projective_Shadows">Non-Projective Shadows</option>
         <option value="14" name="SF_Unknown_4">Unknown/Crash</option>
         <option value="15" name="SF_Refraction">Refraction (switches on refraction power)</option>
         <option value="16" name="SF_Fire_Refraction">Fire Refraction (switches on refraction power/period)</option>
@@ -4368,8 +4360,8 @@
         <option value="23" name="SF_Shadow_Frustum">Shadow Frustum</option>
         <option value="24" name="SF_Multiple_Textures">Multiple Textures (base diff/norm become null)</option>
         <option value="25" name="SF_Remappable_Textures">usually seen w/texture animation</option>
-        <option value="26" name="SF_Decal_Single_Pass">Decal</option>
-        <option value="27" name="SF_Dynamic_Decal_Single_Pass">Dynamic Decal</option>
+        <option value="26" name="SF_Decal/Single_Pass">Decal</option>
+        <option value="27" name="SF_Dynamic_Decal/Single_Pass">Dynamic Decal</option>
         <option value="28" name="SF_Parallax_Occulsion">Parallax Occlusion</option>
         <option value="29" name="SF_External_Emittance">External Emittance</option>
         <option value="30" name="SF_Shadow_Map">Shadow Map</option>
@@ -4420,35 +4412,35 @@
     3: 
     4: Emissive or Saturation?
     5: Alpha Transparency
-    6: U Offset
-    7: U Scale
-    8: V Offset
-    9: V Scale
+    6: Texture Translation U
+    7: Texture Repeat U
+    8: Texture Translate V
+    9: Texture Repeat V
         <add name="Target Variable" type="uint">Unknown</add>
     </niobject>
-	
+
 	<niobject name="BSEffectShaderPropertyColorController" inherit="NiFloatInterpController">
     Unkown
 		<add name="Unknown Int 1" type="uint">Unknown</add>
 	</niobject>
-	
-	<niobject name="BSLightingShaderPropertyFloatController" abstract="0" inherit="NiFloatInterpController">
+
+    <niobject name="BSLightingShaderPropertyFloatController" abstract="0" inherit="NiFloatInterpController">
     This controller is used to animate variables in BSLightingShaderPropertyFloatController, target is a number in order they appear:
-    5: U Offset
-    6: V Offset
-    7: U Scale
-    8: V Scale
-		<add name="Target Variable" type="uint">Which variable in the shader to animate.</add>
-	</niobject>
+    5: Texture Translation U
+    6: Texture Translation V
+    7: Texture Repeat U
+    8: Texture Repeat V
+        <add name="Target Variable" type="uint">Which variable in the shader to animate.</add>
+    </niobject>
 	
 	<niobject name="BSLightingShaderPropertyColorController" abstract="0" inherit="NiFloatInterpController">
 		<add name="Target Variable" type="uint">Which variable in the shader to animate.</add>
-	</niobject>	
-	
+	</niobject>
+
 	<niobject name="BSNiAlphaPropertyTestRefController" inherit="NiAlphaController">
     Unkown
 	</niobject>
-	
+
 	<niobject name="BSProceduralLightningController" abstract="0" inherit="NiFloatInterpController">
     Skyrim, Paired with dummy TriShapes, this controller generates lightning shapes for special effects.
     First interpolator controls Generation.
@@ -4543,7 +4535,7 @@
         <option value="10" name="SLSF1_Facegen_Detail_Map">Use a face detail map in the 4th texture slot.</option>
         <option value="11" name="SLSF1_Parallax">Unused?</option>
         <option value="12" name="SLSF1_Model_Space_Normals">Use Model space normals and an external Specular Map.</option>
-        <option value="13" name="SLSF1_Non_Projective_Shadows">Unknown.</option>
+        <option value="13" name="SLSF1_Non-Projective_Shadows">Unknown.</option>
         <option value="14" name="SLSF1_Landscape">Unknown.</option>
         <option value="15" name="SLSF1_Refraction">Use normal map for refraction effect.</option>
         <option value="16" name="SLSF1_Fire_Refraction"></option>
@@ -4600,12 +4592,17 @@
         <option value="31" name="SLSF2_HD_LOD_Objects"></option>
     </bitflags>
 
-    <niobject name="BSLightingShaderProperty"  abstract="0" inherit="NiProperty">
+    <niobject name="BSLightingShaderProperty"  abstract="0" inherit="NiObject">
         Skyrim PP shader for assigning material/shader/texture.
+        <add name="Skyrim Shader Type" type="BSLightingShaderPropertyShaderType" vercond="User Version >= 12">Configures the main shader path</add>
+        <add name="Name" type="string">Object Name</add>
+        <add name="Num Extra Data List" type="uint" ver1="10.0.1.0">The number of Extra Data objects referenced through the list.</add>
+        <add name="Extra Data List" type="Ref" template="NiExtraData" arr1="Num Extra Data List" ver1="10.0.1.0">List of extra data indices.</add>
+        <add name="Controller" type="Ref" template="NiTimeController" ver1="3.0">Controller object index. (The first in a chain)</add>
         <add name="Shader Flags 1" type="SkyrimShaderPropertyFlags1" vercond="User Version == 12" default="2185233153">Skyrim Shader Flags for setting render/shader options.</add>
         <add name="Shader Flags 2" type="SkyrimShaderPropertyFlags2" vercond="User Version == 12" default="32801">Skyrim Shader Flags for setting render/shader options.</add>
-        <add name="UV Offset" type="TexCoord">Offset UVs</add>
-        <add name="UV Scale" type="TexCoord" default="1.0, 1.0">Offset UV Scale to repeat tiling textures, see above.</add>
+        <add name="UV Offset" type="TexCoord">UV Offset</add>
+        <add name="UV Scale" type="TexCoord">UV Scale</add>
         <add name="Texture Set" type="Ref" template="BSShaderTextureSet">Texture Set, can have override in an esm/esp</add>
         <add name="Emissive Color" type="Color3">Glow color and alpha</add>
         <add name="Emissive Multiple" type="float">Multiplied emissive colors</add>
@@ -4636,8 +4633,8 @@
         Skyrim non-PP shader model, used primarily for transparency effects.
         <add name="Shader Flags 1" type="SkyrimShaderPropertyFlags1"></add>
         <add name="Shader Flags 2" type="SkyrimShaderPropertyFlags2"></add>
-        <add name="UV Offset" type="TexCoord">Offset UVs</add>
-        <add name="UV Scale" type="TexCoord" default="1.0, 1.0">Offset UV Scale to repeat tiling textures</add>
+        <add name="UV OffSet" type="TexCoord">UV OffSet</add>
+        <add name="UV Scale" type="TexCoord" default="1.0, 1.0">UV Scale</add>
         <add name="Source Texture"  type="SizedString">points to an external texture.</add>
         <add name="Texture Clamp Mode" type="uint">How to handle texture borders.</add>
         <!-- Seems to behave the same as in LightingShader, but needs flags instead? -->
@@ -4662,7 +4659,7 @@
         <option value="6" name="SWSF1_Highlight_Layer_Toggle">Reflection layer 2 on/off. (is this scene reflection?)</option>
         <option value="7" name="SWSF1_Enabled">Water layer on/off</option>
     </bitflags>
-    
+
     <niobject name="BSWaterShaderProperty" inherit="NiProperty">
         Skyrim water shader property, different from "WaterShaderProperty" seen in Fallout.
         <add name="Shader Flags 1" type="SkyrimShaderPropertyFlags1"></add>
@@ -4673,7 +4670,7 @@
         <add name="Water Direction" type="byte" default="3">A bitflag, only the first/second bit controls water flow positive or negative along UVs.</add>
         <add name="Unknown Short 3" type="ushort">Unknown, flag?</add>  
     </niobject>
-    
+
     <enum name="SkyObjectType" storage="uint">
         Skyrim, sets what sky function this object fulfills in BSSkyShaderProperty.
         <option value="0" name="BSSM_SKY_TEXTURE">BSSM_Sky_Texture</option>
@@ -4733,10 +4730,10 @@
 
     <niobject name="BSStripPSysData" inherit="NiPSysData">
         Bethesda-Specific (mesh?) Particle System Data.
-        <add name="Unknown Short 5" type="short">Unknown</add>
-        <add name="Unknown Byte 6" type="byte">Unknown</add>
-        <add name="Unknown Int 7" type="int">Unknown</add>
-        <add name="Unknown Float 8" type="float">Unknown</add>
+        <add name="Unknown Short 3" type="short">Unknown</add>
+        <add name="Unknown byte 1" type="byte">Unknown</add>
+        <add name="Unknown Int 2" type="int">Unknown</add>
+        <add name="Unknown Int 3" type="int">Unknown</add>
     </niobject>
 
 
@@ -5768,42 +5765,42 @@
         <add name="Material" type="HavokMaterial">The shape&#039;s material.</add>
         <add name="Unknown Float 1" type="float">Unknown.</add>
         <add name="Unknown 4 Bytes" type="byte" arr1="4">Unknown.</add>
-		<add name="Unknown Floats 1" type="Vector4">Unknown</add>
+        <add name="Unknown Floats 1" type="Vector4">Unknown</add>
         <add name="Radius" type="float">A shell with that radius is added around the shape.</add>
         <add name="Scale" type="float">Scale</add>
-        <add name="Unknown Float 3" type="float">Unknown</add>
-        <add name="Unknown Float 4" type="float">Unknown</add>
-        <add name="Unknown Float 5" type="float">Unknown</add>
-		<add name="Data" type="Ref" template="bhkCompressedMeshShapeData">The collision mesh data.</add>
+        <add name="Unknown Float  3" type="float">Unknown</add>
+        <add name="Unknown Float  4" type="float">Unknown</add>
+        <add name="Unknown Float  1" type="float">Unknown</add>
+        <add name="Data" type="Ref" template="bhkCompressedMeshShapeData">The collision mesh data.</add>
     </niobject>
 
-    <niobject name="bhkCompressedMeshShapeData" inherit="NiObject">
+	<niobject name="bhkCompressedMeshShapeData" inherit="NiObject">
          A compressed mesh shape for collision in Skyrim.
-		<add name="Bits Per Index" type="uint">Number of bits in the shape-key reserved for a triangle index</add>
-		<add name="Bits Per W Index" type="uint">Number of bits in the shape-key reserved for a triangle index and its winding</add>
-		<add name="Mask W Index" type="uint">Mask used to get the triangle index and winding from a shape-key (common: 262143 = 0x3ffff)</add>
-		<add name="Mask Index" type="uint">Mask used to get the triangle index from a shape-key (common: 131071 = 0x1ffff)</add>
-		<add name="Error" type="float">The radius of the storage mesh shape? Quantization error?</add>
-		<add name="Bounds Min" type="Vector4">The minimum boundary of the AABB (the coordinates of the corner with the lowest numerical values)</add>
-		<add name="Bounds Max" type="Vector4">The maximum boundary of the AABB (the coordinates of the corner with the highest numerical values)</add>
-		<add name="Unknown Byte 1" type="byte">Unknown</add>
-		<add name="Unknown Int 3" type="uint">Unknown</add>
+        <add name="Bits Per Index" type="uint">Number of bits in the shape-key reserved for a triangle index</add>
+        <add name="Bits Per WIndex" type="uint">Number of bits in the shape-key reserved for a triangle index and its winding</add>
+        <add name="WIndexMask" type="uint">Mask used to get the triangle index and winding from a shape-key (common: 262143 = 0x3ffff)</add>
+        <add name="IndexMask" type="uint">Mask used to get the triangle index from a shape-key (common: 131071 = 0x1ffff)</add>
+        <add name="Radius?Error?" type="float">The radius of the storage mesh shape? Quantization error?</add>
+        <add name="Bound Min" type="Vector4">The minimum boundary of the AABB (the coordinates of the corner with the lowest numerical values)</add>
+        <add name="Bound Max" type="Vector4">The maximum boundary of the AABB (the coordinates of the corner with the highest numerical values)</add>
+        <add name="Unknown Byte 1" type="byte">Unknown</add>
+        <add name="Unknown Int 3" type="uint">Unknown</add>
         <add name="Unknown Int 4" type="uint">Unknown</add>
         <add name="Unknown Int 5" type="uint">Unknown</add>
-		<add name="Unknown Byte 2" type="byte">Unknown</add>
-		<add name="Num Materials" type="uint">Number of chunk materials</add>
-		<add name="Chunk Materials" type="bhkCMSDMaterial" arr1="Num Materials">Table (array) with sets of materials. Chunks refers to this table by index.</add>
-		<add name="Unknown Int 6" type="uint">Unknown</add>
-		<add name="Num Transforms" type="uint">Number of chunk transformations</add>
-        <add name="Chunk Transforms" type="bhkCMSDTransform" arr1="Num Transforms">Table (array) with sets of transformations. Chunks refers to this table by index.</add>
-		<add name="Num Big Verts" type="uint">Unknown</add>
-		<add name="Big Verts" type="Vector4" arr1="Num Big Verts">Compressed Vertices?</add>
+        <add name="Unknown Byte 2" type="byte">Unknown</add>
+        <add name="Num Materials" type="uint">Number of chunk materials</add>
+        <add name="Chunk Materials" type="bhkCMSDMaterial" arr1="Num Materials">Table (array) with sets of materials. Chunks refers to this table by index.</add>
+        <add name="Unknown Int 6" type="uint">Unknown</add>
+        <add name="Num Transforms" type="uint">Number of chunk transformations</add>
+        <add name="Chunk Transforms" type="bhkCMSDTransform" arr1="Num Transforms" cond="Num Transforms >= 1">Table (array) with sets of transformations. Chunks refers to this table by index.</add>
+        <add name="Num Big Verts" type="uint">Unknown</add>
+        <add name="Big Verts" type="Vector4" arr1="Num Big Verts" cond="Num Big Verts >= 1">Compressed Vertices?</add>
         <add name="Num Big Tris" type="uint">Unknown</add>
-        <add name="Big Tris" type="bhkCMSDBigTris" arr1="Num Big Tris">Unknown</add>
+        <add name="Big Tris" type="bhkCMSDBigTris" arr1="Num Big Tris" cond="Num Big Tris >= 1">Unknown</add>
         <add name="Num Chunks" type="uint">Unknown</add>
         <add name="Chunks" type="bhkCMSDChunk" arr1="Num Chunks"></add>
         <add name="Unknown Int 12" type="uint">Unknown, end of block.</add>
-	</niobject>
+   </niobject>
 	
     <!-- Skyrim specific blocks -->
     <niobject name="BSInvMarker" abstract="0" inherit="NiExtraData">
@@ -5854,13 +5851,17 @@
     Unknown, related to trees.
     </niobject>
     
-    <niobject name="BSTreeNode" inherit="NiNode">
+    <niobject name="BSTreeNode" inherit="NiAVObject">
     Node for handling Trees, Switches branch configurations for variation?
+        <add name="Num Children" type="uint">The number of child objects.</add>
+        <add name="Children" type="Ref" template="NiAVObject" arr1="Num Children">List of child node object indices.</add>
+        <add name="Unknown Int 1" type="uint">Unknown</add>
         <add name="Num Bones 1" type="uint">Unknown</add>
         <add name="Bones 1" type="Ref" arr1="Num Bones 1" template="NiNode">Unknown</add>
         <add name="Num Bones 2" type="uint">Unknown</add>
         <add name="Bones" type="Ref" arr1="Num Bones 2" template="NiNode">Unknown</add>
     </niobject>
-    
+<!-- End Skyrim-specific blocks -->
+
     
 </niftoolsxml>
